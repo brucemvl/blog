@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'acmeregular';
+    src: url('../Acme-Regular-webfont.eot');
+    src: url('../Acme-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Acme-Regular-webfont.woff2') format('woff2'),
+         url('../Acme-Regular-webfont.woff') format('woff'),
+         url('../Acme-Regular-webfont.ttf') format('truetype'),
+         url('../Acme-Regular-webfont.svg#acmeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+	font-family: acmeregular;
+	background-image: url(../R2.jpg);
+	background-attachment: fixed;
+}
+.blocpage
+{
+	width: 1300px;
+	margin: auto;
+}
+header
+{
+	border: 8px double black;
+	background-color: white;
+	border-radius: 0px 0px 20px 20px;
+	text-align: center;
+	margin-bottom: 10px;
+	position: relative;
+	box-shadow: 3px 5px 3px black
+}
+header img
+{
+	height: 100px;
+	position: absolute;
+	right: 15px;
+	top: 10px
+}
+.photos
+{
+	border: double 7px black;
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	box-shadow: 3px 3px 3px black inset;
+	margin-top: 10px;
+	padding: 20px;
+}
+section img
+{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	box-shadow: 3px 3px 2px black;
+	margin: 8px;
+	opacity: 0.7;
+	transition: 3s;
+	transition-timing-function: cubic-bezier(0, .75, .08, 1);
+	
+}
+section img:hover
+{
+	box-shadow: none;
+	opacity: 1;
+	border-radius: 2%;
+	transform: scale(1.2);
+}
+
+footer
+{
+	color: white;
+	text-align: right;
+}
+footer a
+{
+	text-decoration: none;
+	color: white
+}
+footer a:hover
+{
+	color: grey;
+}
+.retour
+{
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	text-decoration: none;
+	color: black;
+	transition: 0.5s;
+}
+.retour:hover
+{
+color: grey;
+transform: scale(1.05);
+}

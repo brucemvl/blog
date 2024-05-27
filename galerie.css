@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'acmeregular';
+    src: url('Acme-Regular-webfont.eot');
+    src: url('Acme-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Acme-Regular-webfont.woff2') format('woff2'),
+         url('Acme-Regular-webfont.woff') format('woff'),
+         url('Acme-Regular-webfont.ttf') format('truetype'),
+         url('Acme-Regular-webfont.svg#acmeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.blocpage
+{
+width: 1200px;
+	margin: auto;
+}
+
+
+.dubai
+{
+	background-image: url(dubi.jpg);
+	filter: grayscale(80%) blur(1px);	
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 360px;
+	width: 100%;
+	opacity: 0.6;
+	border-radius: 80px / 50px;
+	border: 2px solid white;
+	transition: 1s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dubai:hover
+{
+-webkit-filter: none;	
+filter: none;
+}
+.martinique
+{
+	display: flex;
+    background-image: url(maddd.jpg);
+    -webkit-filter: grayscale(80%) blur(1px);
+    filter: grayscale(80%) blur(1px);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 360px;
+    width: 100%;
+    border-radius: 80px / 50px;
+    border: 2px solid white;
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+		
+
+}
+.martinique:hover
+{
+	-webkit-filter: none;
+	filter: none;
+}
+
+.martinique:hover + .mada
+{
+	color:white;
+	transform: scale(1.2);
+	text-shadow:  0px 5px 5px black;
+
+}
+.tunisie
+{
+	background-image: url(djerba.jpg);
+	filter: grayscale(70%) blur(1px);	
+	background-repeat: no-repeat;
+	height: 360px;
+	width: 100%;
+	opacity: 0.6;
+	border-radius: 80px / 50px;
+	border: 2px solid white;
+	transition: 1s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tunisie:hover
+{
+-webkit-filter: none;
+filter: none;
+}
+a
+{
+	text-decoration: none;
+	color: black;
+	transition: 1s;
+	/* position: absolute; */
+	/* left: 100px; */
+}
+
+.mada
+{
+	
+	font-size: 40px;
+	scale: 1;
+	
+}
+.dub{
+	
+	font-size: 40px;
+	scale: 1;
+}
+.dubai:hover + .dub
+{
+	color:white;
+	transform: scale(1.2);
+	text-shadow:  0px 5px 5px black;
+}
+.tun{
+	
+	font-size: 40px;
+	scale: 1;
+}
+.tunisie:hover + .tun
+{
+	color:white;
+	transform: scale(1.2);
+	text-shadow:  0px 5px 5px black;
+}
+a:hover{
+	text-decoration:none;
+	color:white;
+	transform: scale(1.2);
+		text-shadow:  0px 5px 5px black;
+		
+
+}
+
+
+
+
+
+section
+{
+	height: 360px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+
+}
+
+
+
+
+header
+{
+	border: 8px double black;
+	border-radius: 0px 0px 20px 20px;
+	background-color: white;
+	position: relative;
+	box-shadow: 3px 5px 3px black;
+}
+h1
+{
+	font-size: 4em;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+}
+body
+{
+	font-family: acmeregular;
+	background-image: url(R2.jpg);
+	background-attachment: fixed;
+}
+header img
+{
+	height: 100px;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	}
+
+	footer
+{
+	color: white;
+	text-align: right;
+}
+footer a
+{
+	text-decoration: none;
+	color: white;
+}
+footer a:hover
+{
+color: grey;
+}
+.coeur
+{
+	height: 25px;
+	width: 20px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	transition: 1s cubic-bezier(.83,-1.29,0,.49);
+	transform: scale(1);
+
+
+}
+.coeur:hover{
+	transform: scale(1.3) rotate(1turn);
+}

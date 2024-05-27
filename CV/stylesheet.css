@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'mitrregular';
+    src: url('Mitr-Regular-webfont.eot');
+    src: url('Mitr-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Mitr-Regular-webfont.woff2') format('woff2'),
+         url('Mitr-Regular-webfont.woff') format('woff'),
+         url('Mitr-Regular-webfont.ttf') format('truetype'),
+         url('Mitr-Regular-webfont.svg#mitrregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

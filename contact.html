@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="contact.css">        
+        <title>contact</title>
+        <script src="horloge.js"></script>
+    </head>
+
+    <body onload="horloge()">
+        <div class="blocpage">
+            <header>
+    	<h1>CONTACT</h1>
+        <a href="blog%20bruce.html"><img src="logoo.png"></a>
+        <p class="date" style="margin-left: 20px; position: absolute; bottom: 20px;"></p><br>
+			<p class="heure" style="margin-left: 20px; position: absolute; bottom: 1px;"></p>
+    </header>
+<div class="form">
+    	<form method="get" action="">
+    		<p>Laissez moi un message afin de me faire part de votre visite et m'apporter des suggestions pour ameliorer mon site</p>
+    		<label for="prenom"></label><input type="text" name="prenom" id="prenom" placeholder="prenom"><br>
+    		<textarea id="text" placeholder="message"></textarea>
+    		<input class="bouton" type="submit"  name="" value="Envoyer">
+    	</form>
+        <div class="mail"><a href="mailto:bruce.monnerville@hotmail.fr ?subject=Blog Bruce:">Ou bien me contacter directement par mail ici</a></div>
+        <p class="dateheure"></p>
+</div>
+<footer>
+  <p>Copyright BM development - Tous droits réservés <br/>
+      <a href="contact.html">Me contacter</a></p>
+</footer>
+    	</div>
+        <script>
+         
+
+            let button = document.querySelector('.bouton');
+           
+
+    
+                button.onclick = function() {
+                    
+                  let texte = document.getElementById("text").value;
+                  let name = document.getElementById("prenom").value;
+                  let initiale = name.slice(0,1);
+                  let nom = name.replace(initiale, initiale.toUpperCase());
+                
+                 
+                  
+                  if (name === "amelie" || name === "amélie" || name === "Amelie" || name === "Amélie"){
+                    alert('Hello ' + nom + ' mon amour, merci pour ton message!');
+                  }
+                  else if (name=== "Lina" || name === "lina"){
+                    alert('Hello ma fille chérie ' + nom + ', merci pour ton message')
+                  }
+                  else if(name=== "raphaelle"){
+                    alert("coucou ma niece merci pour ton message")
+                  }
+                 
+                  else if (texte.indexOf("conar") !== -1 || texte.indexOf("connar") !== -1 || texte.indexOf("fdp") !== -1 || texte.indexOf("encul") !== -1 || texte.indexOf("batar") !== -1){
+                    alert(nom + " les insultes sont interdites ici IMBECILE!")
+                  }
+                  
+                  else {
+                  alert('Hello ' + nom + ', merci pour ton message!')}
+                  
+                
+
+                
+                
+                }</script>
+
+    </body>

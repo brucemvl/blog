@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="csstest.css">
+        <title>Blog Bruce Monnerville</title>
+		<script src="horloge.js" defer></script>
+
+		
+    </head>
+
+    <body onload="horloge()">
+
+    <div class="blocpage">
+    	<header>
+    		<img src="logoo.png">
+    		<h1>BLOG BRUCE MONNERVILLE</h1>
+			
+    		<nav>
+    			<ul>
+    				<li><a href="#presentation">Présentation</a></li>
+    				<li><a href="galerie.html">Galerie</a></li>
+    				<li ><a href="cv/cv.html">CV</a></li>
+                    <li><a href="number.html">Jeux</a></li>
+    				<li><a href="contact.html">Contact</a></li>
+
+    			</ul>
+    		</nav>
+    		<p class="date" style="margin-left: 20px; position: absolute; bottom: 20px;"></p><br>
+			<p class="heure" style="margin-left: 20px; position: absolute; bottom: 1px;"></p>
+		</header>
+
+    	<div class="banniere">
+    		<div class="texteban">
+                <p> <div class="btn"><a href="madinina/galeriemartinique.html"><button>CLIQUEZ ICI</button></a></div><div class="retour"> Retour sur mes vacances en Martinique... </div></p>
+    		</div>
+    	</div>
+
+    	<section>
+    		<article id="presentation">
+    			<a href="bruce.jpg"><img src="bruce.jpg" alt="photo" title="Cliquez pour agrandir" class="bruce"></a>
+    			<h1> Bienvenue sur mon 1er site</h1>
+    			<p>Je vous souhaite la bienvenue sur mon site<br>
+    				Etant actuellement en train d'apprendre le metier de developpeur web, ce blog est un premier test pour moi afin de travailler la mise en page d'un site web. Apres avoir réussi a faire mon cv en HTML et n'ayant pas de réel projet de site web, je me lance dans la construction d'un blog pour m'entrainer. Vous pourrez voir ici quelques photos de mes différents voyages et mon CV dans le menu en haut de la page. Je mettrai regulierement ce site a jour et ajouterai du contenu lorsque des idées me viendront en tete. Vous pouvez aussi participer en me proposant des idées de contenu via l'onglet "contact".<br>
+    				Je vous souhaite a tous une bonne visite! </p>
+    		</article>
+    		<aside class="galery"><h2>Galerie</h2>
+    			<ul class="liste">
+    			<li class="clicM"><a href="madinina/galeriemartinique.html">Martinique</a></li>
+    			<li class="clicD"><a href="dubai/galeriedubai.html">Dubai</a></li>
+    			<li class="clicT"><a href="tunisie/galerietunisie.html">Tunisie</a></li>
+    			</ul>
+    		</aside>
+    	</section>
+        <footer>
+            <p>Copyright BM development - Tous droits réservés <br/>
+                <a href="contact.html">Me contacter</a></p>
+        </footer>
+    </div>
+	<script>
+		
+	let clicM = document.querySelector('.clicM');
+	let clicD = document.querySelector('.clicD');
+	let clicT = document.querySelector('.clicT');
+	let fond = document.querySelector('.galery');
+	let liste = document.querySelector('.liste');
+	
+function changementFond(clic, image,){
+	fond.style.transitionDuration = "1500ms, 1500ms"
+
+
+	clic.addEventListener("mouseover", ()=>{
+
+		fond.style.backgroundImage = `url(${image})`
+
+})
+
+fond.addEventListener("mouseleave", ()=>{
+	fond.style.backgroundImage = "none"
+
+	
+
+})
+
+}
+	changementFond(clicM, "madin.jpg")
+	
+	changementFond(clicD, "dubix.jpg")
+	changementFond(clicT, "djerbix.jpg")
+	
+	</script>
+    </body>
+</html>

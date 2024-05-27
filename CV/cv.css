@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'mitrregular';
+    src: url('Mitr-Regular-webfont.eot');
+    src: url('Mitr-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Mitr-Regular-webfont.woff2') format('woff2'),
+         url('Mitr-Regular-webfont.woff') format('woff'),
+         url('Mitr-Regular-webfont.ttf') format('truetype'),
+         url('Mitr-Regular-webfont.svg#mitrregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+header
+{
+	line-height: 5px;
+	border: 1px solid black;
+	border-radius: 2px;
+	background-color: rgb(0 0 64);
+	display: flex;
+	
+}
+
+
+h1
+{
+	font-size: 2.5em;
+	
+}
+.coordonnees
+{
+	text-align: left;
+	margin-right: 230px;
+	padding-left: 10px;
+	color: white;
+
+
+}
+
+.titre
+{
+	
+	color: white;
+	font-size: 1.5em;
+	text-align: center;
+}
+body
+{
+	font-family: mitrregular;
+background: url(greyzz.png);
+}
+
+h2
+{
+	font-size: 2em;
+	color: rgb(0 0 64);
+}
+
+a
+{
+	color: white;
+	text-decoration: none;
+}
+
+
+
+.contenu
+{
+	width: 90%;
+	margin: auto;
+	
+	}
+ul
+{
+	display: inline-block;
+	align-self: center;
+	border-left: 5px solid black;
+	list-style-type: none;
+	margin-left: 50px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	line-height: 70px;
+}
+img
+{
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-right: 30px;
+	position: relative;
+	top: 15px
+}
+ em
+ {
+ 	font-style: italic;
+ }
