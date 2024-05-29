@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'acmeregular';
+    src: url('../Acme-Regular-webfont.eot');
+    src: url('../Acme-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Acme-Regular-webfont.woff2') format('woff2'),
+         url('../Acme-Regular-webfont.woff') format('woff'),
+         url('../Acme-Regular-webfont.ttf') format('truetype'),
+         url('../Acme-Regular-webfont.svg#acmeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+	font-family: acmeregular;
+	background-image: url(../R2.jpg);
+	background-attachment: fixed;
+}
+.blocpage
+{
+	width: 1300px;
+	margin: auto;
+}
+header
+{
+	border: 8px double black;
+	background-color: white;
+	border-radius: 0px 0px 20px 20px;
+	text-align: center;
+	margin-bottom: 10px;
+	position: relative;
+	box-shadow: 3px 5px 3px black
+}
+header img
+{
+	height: 100px;
+	position: absolute;
+	right: 15px;
+	top: 10px
+}
+.photos
+{
+	border: double 7px black;
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex-direction: column;
+	box-shadow: 3px 3px 3px black inset;
+	
+	margin-top: 10px;
+	padding: 25px;
+}
+footer
+{
+	color: white;
+	text-align: right;
+}
+footer a
+{
+	text-decoration: none;
+	color: white
+}
+footer a:hover
+{
+	color: grey;
+}
+.retour
+{
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	text-decoration: none;
+	color: black;
+	transition: 0.5s;
+}
+.retour:hover
+{
+color: grey;
+transform: scale(1.05);
+}
+
+
+
+
+.grandeimg
+{
+   display: flex;
+justify-content: center;
+height: 400px;
+}
+
+.grandeimg img {
+    height: 400px;
+    width: 400px;
+	border-radius: 30px;
+	box-shadow: 0px 5px 10px black;
+	
+}
+.miniatures
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px;
+    height: 70px;
+}
+
+.miniatures img {
+	
+		height: 70px;
+		width: 70px;
+		border-radius: 50%;
+		opacity: 0.7;
+		box-shadow: 0px 5px 5px black;
+		&&:hover {
+cursor: pointer;
+		}
+}
+

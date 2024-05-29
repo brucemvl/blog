@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="jade.css">
+        <title>Galerie Jade</title>
+    </head>
+
+    <body>
+    	<div class="blocpage">
+    		<header>
+				<a href="../galerie.html" class="retour"><< Retour à la galerie</a>
+				<a href="../blog bruce.html"><img src="../logoo.png"></a>
+    			<h1>Jade</h1>
+    			<p>Notre petit bonheur</p>
+    		</header>
+
+    		<section class="photos">
+
+				<div class="grandeimg"></div>
+			
+				<div class="miniatures"></div>
+    		
+    		</section>
+			<footer>
+				<p>Copyright BM development - Tous droits réservés <br/>
+					<a href="contact.html">Me contacter</a></p>
+			</footer>
+    	</div>
+
+		<script>
+			let grandeImg = document.querySelector(".grandeimg")
+			let mini = document.querySelector(".miniatures")
+			let photos = [
+				"Jade1.jpg",
+				"Jade2.jpg",
+				"Jade3.jpg",
+				"Jade4.jpg",
+				"Jade5.jpg",
+				"Jade6.jpg",
+				"Jade7.jpg",
+				"Jade8.jpg",
+				"Jade9.jpg",
+			]
+
+			function genererImage(){
+   
+   for(let i=0; i<photos.length; i++){
+	   
+	let miniatures = document.createElement("img")
+	miniatures.setAttribute("src", photos[i])
+	mini.appendChild(miniatures)
+	
+   
+   
+    	miniatures.addEventListener("click", e=>{
+	   	const imageElement = document.createElement("img")
+		imageElement.src = photos[i]
+		console.log("jai clique sur la" + " "+ photos[i])
+		grandeImg.innerHTML = ""
+		grandeImg.appendChild(imageElement)
+
+	   
+   
+	   
+   })
+
+   }
+     
+   }
+   
+   genererImage()
+
+		</script>
+    </body>
+</html>
