@@ -60,24 +60,24 @@ nav ul
 }
 li
 {
-	border: outset 3px black;
-	padding-left: 11px;
-	padding-right: 11px;
-	padding-top: 1px;
-	font-size: 1.9em;
-	margin: 10px;
-	text-shadow: 2px 2px 4px black;
-	text-align: center;
-	border-radius: 40px / 30px;
-	box-shadow: 3px 3px 3px black
+    border: outset 1px black;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 1px;
+    font-size: 1.9em;
+    margin: 10px;
+    text-shadow: 2px 2px 8px black;
+    text-align: center;
+    border-radius: 40px / 30px;
+    box-shadow: 0px 10px 12px 0px black;
 }
-li:hover
-{
-	background-color:white;
-	border-radius: inset 3px black;
-	box-shadow: 3px 4px 4px black inset;
-	transition: 1s;
-	
+
+
+li:hover {
+    background-color: white;
+    border-radius: inset 3px black;
+    box-shadow: 0px 7px 11px 0px #f8f7f7;
+    transition: 1s;
 }
 
 header h1
@@ -259,18 +259,18 @@ article h1
 }
 aside h2
 {
-	text-shadow: 2px 2px 3px grey
+	text-shadow: 2px 2px 3px grey;	
 }
-aside a
-{
+
+aside a {
 	text-decoration: none;
 	color: black
 }
 
-aside ul
-{
+aside ul {
 	list-style-type: none;
 }
+
 aside a:hover
 {
 	color: white
