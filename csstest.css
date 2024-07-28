@@ -45,7 +45,7 @@ body
 .bruce:hover
 {
 	transform: scaleY(1.6) scaleX(1.2) perspective(150px) rotateX(30deg);
-	border-radius: 1%
+	border-radius: 5%
 }
 
 nav ul
@@ -69,15 +69,16 @@ li
     text-shadow: 2px 2px 8px black;
     text-align: center;
     border-radius: 40px / 30px;
-    box-shadow: 0px 10px 12px 0px black;
+    box-shadow: 0px 5px 12px 0px black;
 }
 
 
 header li:hover {
     background-color: white;
     border-radius: inset 3px black;
-    box-shadow: 0px 7px 11px 0px #f8f7f7;
+    box-shadow: 0px 5px 15px 0px #f8f7f7;
     transition: 1s;
+	border: solid 1px white;
 }
 
 header h1
@@ -125,7 +126,8 @@ header img
 .banniere
 {
 	height: 400px;
-	background-image: url(mada.jpg);
+	/*background-image: url(mada.jpg);*/
+	background-size: cover;
 	position: relative;
 	border-radius: 20px 20px 20px 20px;
 	margin-top: 15px;

@@ -5,7 +5,7 @@ function password(){
 // si le mot de passe est correct la page bravo.html s'ouvre
     if (mdp === "poulet")
     {
-        location.href = "jade.html"
+        location.href = "jade/jade.html"
     }
     // si l'utilisateur n'a rien tapé on le lui signifie puis lui repropose de taper le mot de passe a 3 reprises
     else if (mdp === ""){

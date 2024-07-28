@@ -48,7 +48,7 @@ header img
 	flex-direction: column;
 	gap: 50px;
 	box-shadow: 3px 3px 3px black inset;
-	height: 800px;
+	height: 860px;
 	
 	margin-top: 10px;
 	padding: 25px;
@@ -104,8 +104,8 @@ i {
 }
 
 .grandeimg img {
-    height: 450px;
-    width: 450px;
+    height: 460px;
+    width: 490px;
 	border-radius: 30px;
 	box-shadow: 0px 5px 10px black;
 	
@@ -117,8 +117,17 @@ i {
     justify-content: center;
     gap: 20px;
 }
-.fa-solid {
+.fa-regular {
 	color: black;
+	opacity: 0.6;
+	transition-duration: 0.5s;
+	border-radius: 50%;
+	&&:hover {
+		cursor: pointer;
+		opacity: 1;
+		transform: scale(1.1);
+		box-shadow: 0px 5px 10px 0px black;
+	}
 }
 
 .miniatures img {
@@ -127,9 +136,17 @@ i {
 		width: 70px;
 		border-radius: 50%;
 		opacity: 0.7;
+		transition-duration: 0.5s;
 		box-shadow: 0px 5px 5px black;
 		&&:hover {
 cursor: pointer;
+opacity: 1;
+transform: scale(1.1);
+
 		}
+}
+
+.active {
+	opacity: 1;
 }
 

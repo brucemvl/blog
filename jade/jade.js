@@ -1,5 +1,7 @@
 let grandeImg = document.querySelector(".grandeimg")
 let mini = document.querySelector(".miniatures")
+let next = document.getElementById("next")
+    let prev = document.getElementById("prev")
 
 let photos = [  "Jade1.jpg",
 				"Jade2.jpg",
@@ -9,6 +11,7 @@ let photos = [  "Jade1.jpg",
 				"Jade6.jpg",
 				"Jade7.jpg",
 				"Jade8.jpg",
+                "Jade9.jpg",
 				"Jade10.jpg",
                 "Jade11.jpg",
                 "Jade12.jpg",
@@ -43,16 +46,13 @@ let photos = [  "Jade1.jpg",
 			]
 
 
-
 function genererImage(){
-
+   
     
     for(let i=0; i<photos.length; i++){
-	   
     
     let miniatures = document.createElement("img")
-    let next = document.getElementById("next")
-    let prev = document.getElementById("prev")
+    
 	miniatures.setAttribute("src", photos[i])
 	mini.appendChild(miniatures)
 
@@ -60,24 +60,33 @@ function genererImage(){
     const imageElement = document.createElement("img")
     imageElement.src = photos[i]
     
-    	miniatures.addEventListener("click", e=>{
+
+    
+    	miniatures.addEventListener("click", (e)=>{
             
 		console.log("jai clique sur la" + " "+ photos[i])
 		grandeImg.innerHTML = ""
 		grandeImg.appendChild(imageElement)
+        console.log(e.target.src)
         
-        next.addEventListener("click", ()=>{
-            imageElement.src = photos[i++]
+        next.addEventListener("click", (e)=>{
+            i++
+            imageElement.src = photos[i]            
+           
+            console.log([i])
             if(photos[i] === undefined){
-                photos[i] = photos[0]
+                i = -1
             }
             else{}
         })
 
         prev.addEventListener("click", ()=>{
-            imageElement.src = photos[i--]
+            i--
+            imageElement.src = photos[i]
+            console.log([i])
+
             if(photos[i] === undefined){
-                photos[i] = photos[38]
+                i = photos.length
             }
             else{}
         })
