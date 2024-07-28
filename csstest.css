@@ -125,26 +125,29 @@ header img
 }
 .banniere
 {
-	height: 400px;
-	/*background-image: url(mada.jpg);*/
-	background-size: cover;
-	position: relative;
-	border-radius: 20px 20px 20px 20px;
-	margin-top: 15px;
-	margin-bottom: 15px
+	display: flex;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex-direction: column-reverse;
 }
+
 .texteban 
 {
-	color: white;
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-	height: 25px;
-	border-radius: 0px 0px 20px 20px;
-	padding-top: 25px;
-	padding-bottom: 13px;
-	background-color: rgba(0, 0, 0, 0.75);
-	margin-right: 100px
+	display: flex;
+    gap: 25px;
+    color: white;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-right: 100px;
+    justify-content: flex-end;
+    align-items: center;
 
 }
 .texteban:hover
@@ -158,11 +161,12 @@ header img
 
 .retour
 {
-	position: relative;
-	bottom: 25px;
-	right: 160px;
 	text-align: right;
 	font-size: 17px;
+}
+
+.btn {
+	padding-right: 30px;
 }
 
 button:hover
@@ -175,19 +179,14 @@ button:hover
 }
 button
 {
-	position: absolute;
-	bottom: 20px;
-	right: 30px;
-	background: radial-gradient(rgb(120, 198, 227),blue);
-	color: white;
-	font-weight: bold;
-	border: 1px solid blue;
-	height: 30px;
-	border-radius: 5px;
-	box-shadow: 0px 3px 0px black ;
-	transition: transform 1s cubic-bezier(1,-1.3,.46,1.82);
-
-		
+	background: radial-gradient(rgb(120, 198, 227), blue);
+    color: white;
+    font-weight: bold;
+    border: 1px solid blue;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px black;
+    transition: transform 1s cubic-bezier(1,-1.3,.46,1.82);
 }
 
 .btn:hover + .retour
