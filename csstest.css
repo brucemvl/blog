@@ -1,166 +1,161 @@
 @font-face {
-    font-family: 'acmeregular';
-    src: url('Acme-Regular-webfont.eot');
-    src: url('Acme-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Acme-Regular-webfont.woff2') format('woff2'),
-         url('Acme-Regular-webfont.woff') format('woff'),
-         url('Acme-Regular-webfont.ttf') format('truetype'),
-         url('Acme-Regular-webfont.svg#acmeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'acmeregular';
+	src: url('Acme-Regular-webfont.eot');
+	src: url('Acme-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('Acme-Regular-webfont.woff2') format('woff2'),
+		url('Acme-Regular-webfont.woff') format('woff'),
+		url('Acme-Regular-webfont.ttf') format('truetype'),
+		url('Acme-Regular-webfont.svg#acmeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 
 }
+
 @font-face {
-    font-family: 'pincoyablackblack';
-    src: url('pincoyablack-webfont.eot');
-    src: url('pincoyablack-webfont.eot?#iefix') format('embedded-opentype'),
-         url('pincoyablack-webfont.woff2') format('woff2'),
-         url('pincoyablack-webfont.woff') format('woff'),
-         url('pincoyablack-webfont.ttf') format('truetype'),
-         url('pincoyablack-webfont.svg#pincoyablackblack') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'pincoyablackblack';
+	src: url('pincoyablack-webfont.eot');
+	src: url('pincoyablack-webfont.eot?#iefix') format('embedded-opentype'),
+		url('pincoyablack-webfont.woff2') format('woff2'),
+		url('pincoyablack-webfont.woff') format('woff'),
+		url('pincoyablack-webfont.ttf') format('truetype'),
+		url('pincoyablack-webfont.svg#pincoyablackblack') format('svg');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
-
-body
-{
+body {
 	font-family: acmeregular;
 	background-image: url(R2.jpg);
 	background-attachment: fixed;
 }
-.bruce
-{	margin: 15px;
+
+.blocpage {
+	width: 1300px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bruce {
+	margin: 15px;
 	margin-top: 100px;
 	margin-left: 30px;
 	float: left;
 	transition: 1s;
 	transform: scale(1);
 	height: 120px;
-	width:80px;
+	width: 80px;
 	box-shadow: 3px 3px 2px black;
 	border-radius: 45%;
 }
-.bruce:hover
-{
+
+.bruce:hover {
 	transform: scaleY(1.6) scaleX(1.2) perspective(150px) rotateX(30deg);
 	border-radius: 5%
 }
 
-nav ul
-{
-
+nav ul {
 	list-style-type: none;
 	display: flex;
 	position: absolute;
 	right: 15px;
 	bottom: 0px
-
-}
-li
-{
-    border: outset 1px black;
-    padding-left: 11px;
-    padding-right: 11px;
-    padding-top: 1px;
-    font-size: 1.9em;
-    margin: 10px;
-    text-shadow: 2px 2px 8px black;
-    text-align: center;
-    border-radius: 40px / 30px;
-    box-shadow: 0px 5px 12px 0px black;
 }
 
+li {
+	border: outset 1px black;
+	padding-left: 11px;
+	padding-right: 11px;
+	padding-top: 1px;
+	font-size: 1.9em;
+	margin: 10px;
+	text-shadow: 2px 2px 8px black;
+	text-align: center;
+	border-radius: 40px / 30px;
+	box-shadow: 0px 5px 12px 0px black;
+}
 
 header li:hover {
-    background-color: white;
-    border-radius: inset 3px black;
-    box-shadow: 0px 5px 15px 0px #f8f7f7;
-    transition: 1s;
+	background-color: white;
+	border-radius: inset 3px black;
+	box-shadow: 0px 5px 15px 0px #f8f7f7;
+	transition: 1s;
 	border: solid 1px white;
 }
 
-header h1
-{
+header h1 {
 	font-family: pincoyablackblack;
 	margin-left: 10px;
 	color: black;
-font-size: 4em; 
-position: absolute;
-top: 0px;
-left: 15px;
+	font-size: 4em;
+	position: absolute;
+	top: 0px;
+	left: 15px;
 }
-header
-{
+
+header {
 	border: 8px double black;
 	border-radius: 0px 0px 20px 20px;
 	height: 250px;
 	position: relative;
 	background-color: grey;
-	box-shadow: 3px 5px 3px black
-	 
+	box-shadow: 3px 5px 3px black;
+	width: 100%;
 }
 
-header a
-{
+header a {
 	text-decoration-line: none;
 	color: black;
-	text-decoration:none;
+	text-decoration: none;
 }
-a:hover
-{
 
+a:hover {
 	color: grey;
 	text-shadow: 2px 2px 2px black;
 	transition: 0.6s;
 }
-header img
-{
-	
+
+header img {
 	height: 100px;
 	position: absolute;
 	right: 15px;
 	top: 10px
 }
-.banniere
-{
+
+.banniere {
+	width: 98%;
 	display: flex;
-    height: 400px;
-    background-size: cover;
-    position: relative;
-    border-radius: 20px 20px 20px 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    flex-direction: column-reverse;
+	height: 400px;
+	background-size: cover;
+	position: relative;
+	border-radius: 20px 20px 20px 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	flex-direction: column-reverse;
 }
 
-.texteban 
-{
+.texteban {
 	display: flex;
-    gap: 25px;
-    color: white;
-    bottom: 0px;
-    width: 100%;
-    height: 45px;
-    border-radius: 0px 0px 20px 20px;
-    background-color: rgba(0, 0, 0, 0.75);
-    margin-right: 100px;
-    justify-content: flex-end;
-    align-items: center;
+	gap: 25px;
+	color: white;
+	bottom: 0px;
+	width: 100%;
+	height: 45px;
+	border-radius: 0px 0px 20px 20px;
+	background-color: rgba(0, 0, 0, 0.75);
+	margin-right: 100px;
+	justify-content: flex-end;
+	align-items: center;
 
 }
-.texteban:hover
-{
+
+.texteban:hover {
 	opacity: 0.9
 }
 
-
-
-
-
-.retour
-{
+.retour {
 	text-align: right;
 	font-size: 17px;
 }
@@ -169,56 +164,40 @@ header img
 	padding-right: 30px;
 }
 
-button:hover
-{
-	background: radial-gradient( rgb(120,198,227), red);
+button:hover {
+	background: radial-gradient(rgb(120, 198, 227), red);
 	opacity: 1;
 	border: 1px solid red;
 	cursor: pointer;
 	transform: scale(1.15);
 }
-button
-{
+
+button {
 	background: radial-gradient(rgb(120, 198, 227), blue);
-    color: white;
-    font-weight: bold;
-    border: 1px solid blue;
-    height: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 3px 0px black;
-    transition: transform 1s cubic-bezier(1,-1.3,.46,1.82);
+	color: white;
+	font-weight: bold;
+	border: 1px solid blue;
+	height: 30px;
+	border-radius: 5px;
+	box-shadow: 0px 3px 0px black;
+	transition: transform 1s cubic-bezier(1, -1.3, .46, 1.82);
 }
 
-.btn:hover + .retour
-{
-transform: scale(1.04) ;
-
+.btn:hover+.retour {
+	transform: scale(1.04);
 	transition: 0.8s;
-
 }
 
-.btn:active + .retour
-{
+.btn:active+.retour {
 	transform: scale(0.5);
 	transition: 0.1s
 }
 
-.blocpage
-{
-	width: 1300px;
-	margin: auto;
-
-}
-
-section
-{
+section {
 	display: flex;
-
-	
 }
-article
-{
-	
+
+article {
 	text-align: justify;
 	margin-right: 5px;
 	margin-top: 10px;
@@ -230,37 +209,35 @@ article
 	background-color: white;
 	box-shadow: 3px 3px 3px black inset
 }
-article p
-{
+
+article p {
 	margin-left: 165px;
 	margin-top: 20px;
 	padding-right: 20px;
-	
 }
-aside
-{
+
+aside {
 	margin-left: 5px;
 	margin-top: 10px;
 	padding: 10px;
 	border: 7px double black;
 	border-radius: 20px 0px 0px 20px;
 	background-color: white;
-flex: 1;
-box-shadow: 3px 3px 3px black inset
+	flex: 1;
+	box-shadow: 3px 3px 3px black inset
 }
 
-article img:hover
-{
-transform: scale(1.4) ;
+article img:hover {
+	transform: scale(1.4);
 }
-article h1
-{
+
+article h1 {
 	text-shadow: 2px 2px 3px grey;
 	margin-left: 160px
 }
-aside h2
-{
-	text-shadow: 2px 2px 3px grey;	
+
+aside h2 {
+	text-shadow: 2px 2px 3px grey;
 }
 
 aside a {
@@ -269,37 +246,40 @@ aside a {
 }
 
 aside ul {
-    list-style-type: none;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
+	list-style-type: none;
+	margin: 15px;
+	display: flex;
+	flex-direction: column;
 }
 
-aside a:hover
-{
+aside a:hover {
 	color: white
 }
-aside li{
+
+aside li {
 	background-color: white;
 }
-aside li:hover
-{
+
+aside li:hover {
 	background-color: grey
 }
-footer
-{
+
+footer {
 	color: white;
 	text-align: right;
+	position: relative;
+	left: 37%;
 }
-footer a
-{
+
+footer a {
 	text-decoration: none;
 	color: white
 }
-.dateheure{
+
+.dateheure {
 	transition: 1s;
 }
-.dateheure:hover
-{
+
+.dateheure:hover {
 	transform: scale(1.25);
 }
