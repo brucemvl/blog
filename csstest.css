@@ -317,4 +317,35 @@ footer a {
 		padding-left: 35px;
 		padding-right: 35px;
 	}
+
+	section {
+		flex-direction: column;
+	}
+
+	article {
+		border-radius: 0px 0px 20px 20px;
+	}
+
+	.galery {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 20px 20px 0px 0px;
+	}
+
+	.galery h2 {
+		font-size: 35px;
+	}
+
+	.galery ul {
+		width: 60%;
+		gap: 15px;
+	}
+
+	.galery li {
+		height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	}
 }
