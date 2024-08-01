@@ -26,7 +26,7 @@
 
 body {
 	font-family: acmeregular;
-	background-image: url(R2.jpg);
+	background-image: url(R5.jpg);
 	background-attachment: fixed;
 }
 
@@ -100,7 +100,7 @@ header {
 	border-radius: 0px 0px 20px 20px;
 	height: 250px;
 	position: relative;
-	background-color: grey;
+	background-color: #c1c0bf;
 	box-shadow: 3px 5px 3px black;
 	width: 100%;
 }
@@ -109,12 +109,12 @@ header a {
 	text-decoration-line: none;
 	color: black;
 	text-decoration: none;
+	transition-duration: 0.6s;
 }
 
 a:hover {
-	color: grey;
+	color: #d2c176;
 	text-shadow: 2px 2px 2px black;
-	transition: 0.6s;
 }
 
 header img {
@@ -242,7 +242,8 @@ aside h2 {
 
 aside a {
 	text-decoration: none;
-	color: black
+	color: black;
+	transition-duration: 0.6s;
 }
 
 aside ul {
@@ -258,10 +259,11 @@ aside a:hover {
 
 aside li {
 	background-color: white;
+	transition-duration: 0.6s;
 }
 
 aside li:hover {
-	background-color: grey
+	background-color: #c1c0bf
 }
 
 footer {
@@ -282,4 +284,37 @@ footer a {
 
 .dateheure:hover {
 	transform: scale(1.25);
+}
+
+@media (max-width: 600px) {
+
+	header {
+		display: flex;
+		justify-content: center;
+	}
+
+	.menu {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	header nav {
+		display: flex;
+		align-items: flex-end;
+		position: initial;
+	}
+
+	header nav ul {
+		position: initial;
+	}
+
+	header p {
+		position: absolute;
+		left: 50px
+	}
+
+	header li {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
 }
