@@ -320,6 +320,7 @@ footer a {
 
 	section {
 		flex-direction: column;
+		width: 95%;
 	}
 
 	article {
@@ -347,5 +348,8 @@ footer a {
         display: flex;
         justify-content: center;
         align-items: center;
+	}
+	aside h2{
+		margin-bottom: 5px;
 	}
 }

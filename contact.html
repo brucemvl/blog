@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="contact.css">        
         <title>contact</title>
         <script src="horloge.js"></script>
@@ -34,18 +35,17 @@
          
 
             let button = document.querySelector('.bouton');
+            let texte = document.getElementById("text").value;
+                  let name = document.getElementById("prenom").value;
+                  let initiale = name.slice(0,1);
+                  let nom = name.replace(initiale, initiale.toUpperCase());
+
+                  button.style.opacity = "0.5"
            
 
     
                 button.onclick = function() {
-                    
-                  let texte = document.getElementById("text").value;
-                  let name = document.getElementById("prenom").value;
-                  let initiale = name.slice(0,1);
-                  let nom = name.replace(initiale, initiale.toUpperCase());
-                
-                 
-                  
+                   
                   if (name === "amelie" || name === "amélie" || name === "Amelie" || name === "Amélie"){
                     alert('Hello ' + nom + ' mon amour, merci pour ton message!');
                   }
@@ -62,11 +62,25 @@
                   
                   else {
                   alert('Hello ' + nom + ', merci pour ton message!')}
+
+                  }
+
+                    document.getElementById("prenom").addEventListener("change", ()=>{
+                      console.log(document.getElementById("prenom").value.length)
+                    if (document.getElementById("prenom").value.length > 1){
+                      button.disabled = false
+                      button.style.opacity = "1"
+                    }
+                  })
+                  
+                  
+
+                  
                   
                 
 
                 
                 
-                }</script>
+                </script>
 
     </body>
