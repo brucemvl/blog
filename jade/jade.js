@@ -95,18 +95,8 @@ function genererImage(){
         
          })
 
-
-        
-
-        
-
-
    }
-   
-  
   
    }
-   
-   
    genererImage()
    

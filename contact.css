@@ -71,6 +71,12 @@ p
 {
     margin-left: 10px
 }
+.bouton {
+    border-radius: 10px;
+    background-color: #c1c0bf;
+    color: black;
+    font-weight: 600;
+}
 
 .dateheure
 {
@@ -121,6 +127,5 @@ footer a
         margin-top: 20px;
         width: 50%;
         height: 30px;
-        border-radius: 10px;
     }
 }
