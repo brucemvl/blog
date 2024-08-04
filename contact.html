@@ -37,7 +37,7 @@
 
         button.style.opacity = "0.5"
            
-        
+
                 button.addEventListener("click", ()=> {
             let texte = document.querySelector(".text").value;
             const name = document.querySelector(".prenom").value;
@@ -55,12 +55,15 @@
                   }
                  
                   else if (texte.indexOf("conar") !== -1 || texte.indexOf("connar") !== -1 || texte.indexOf("fdp") !== -1 || texte.indexOf("encul") !== -1 || texte.indexOf("batar") !== -1){
-                    alert(nom + " les insultes sont interdites ici IMBECILE!")
+                    alert(nom.toUpperCase() + "!!" + " les insultes sont interdites ici IMBECILE!")
+                  }
+
+                  else if(name.length < 1 || texte.length < 1){
+                    alert("Veuillez remplir les champs svp")
                   }
                   
                   else {
                   alert('Hello ' + nom + ', merci pour ton message!')}
-
                   }
                 )
                     document.querySelector(".prenom").addEventListener("change", ()=>{

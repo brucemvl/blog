@@ -220,4 +220,11 @@ footer a:hover {
 		align-items: center;
 	}
 
+	.coeur {
+		width: 40px;
+		height: 40px;
+		top: 185%;
+		right: 85%;
+	}
+
 }
