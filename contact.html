@@ -19,8 +19,8 @@
 <div class="form">
     	<form method="get" action="">
     		<p>Laissez moi un message afin de me faire part de votre visite et m'apporter des suggestions pour ameliorer mon site</p>
-    		<label for="prenom"></label><input type="text" name="prenom" id="prenom" placeholder="prenom"><br>
-    		<textarea id="text" placeholder="message"></textarea>
+    		<label for="prenom"></label> <input type="text" name="prenom" class="prenom" placeholder="prenom"><br>
+    		<textarea class="text" placeholder="message"></textarea>
     		<input class="bouton" type="submit"  name="" value="Envoyer">
     	</form>
         <div class="mail"><a href="mailto:bruce.monnerville@hotmail.fr ?subject=Blog Bruce:">Ou bien me contacter directement par mail ici</a></div>
@@ -32,19 +32,17 @@
 </footer>
     	</div>
         <script>
-         
+       
+        let button = document.querySelector('.bouton');
 
-            let button = document.querySelector('.bouton');
-            let texte = document.getElementById("text").value;
-                  let name = document.getElementById("prenom").value;
-                  let initiale = name.slice(0,1);
-                  let nom = name.replace(initiale, initiale.toUpperCase());
-
-                  button.style.opacity = "0.5"
+        button.style.opacity = "0.5"
            
-
-    
-                button.onclick = function() {
+        
+                button.addEventListener("click", ()=> {
+            let texte = document.querySelector(".text").value;
+            const name = document.querySelector(".prenom").value;
+            let initiale = name.slice(0,1);
+            let nom = name.replace(initiale, initiale.toUpperCase());
                    
                   if (name === "amelie" || name === "amélie" || name === "Amelie" || name === "Amélie"){
                     alert('Hello ' + nom + ' mon amour, merci pour ton message!');
@@ -64,10 +62,10 @@
                   alert('Hello ' + nom + ', merci pour ton message!')}
 
                   }
-
-                    document.getElementById("prenom").addEventListener("change", ()=>{
-                      console.log(document.getElementById("prenom").value.length)
-                    if (document.getElementById("prenom").value.length > 1){
+                )
+                    document.querySelector(".prenom").addEventListener("change", ()=>{
+                      console.log(document.querySelector(".prenom").value.length)
+                    if (document.querySelector(".prenom").value.length > 1){
                       button.disabled = false
                       button.style.opacity = "1"
                     }
