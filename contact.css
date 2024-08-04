@@ -72,10 +72,19 @@ p
     margin-left: 10px
 }
 .bouton {
+    height: 25px;
+    width: 10%;
     border-radius: 10px;
     background-color: #c1c0bf;
     color: black;
     font-weight: 600;
+    transition-duration: 0.5s;
+}
+
+.bouton:hover {
+    box-shadow: black 0px 5px 15px;
+    cursor: pointer;
+    color: white;
 }
 
 .dateheure
