@@ -58,14 +58,25 @@ header img
 }
 input
 {
+    height: 30px;
     margin-left: 40px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: inset grey 0px 1px 15px 1px;
+    padding-left: 10px;
 }
 textarea
 {
     margin-left: 40px;
     width: 400px;
-    height: 100px
+    height: 100px;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: inset grey 0px 0px 15px 5px;
+}
+
+textarea placeholder {
+    margin: 20px;
 }
 p
 {
