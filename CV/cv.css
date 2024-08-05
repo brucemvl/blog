@@ -10,17 +10,25 @@
 	font-style: normal;
 }
 
+.contenu {
+	display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;	width: 90%;
+	margin: auto;
+}
+
 header {
-	line-height: 5px;
+	line-height: 8px;
 	border: 1px solid black;
-	border-radius: 2px;
+	border-radius: 10px;
 	background-color: rgb(0 0 64);
 	display: flex;
 }
 
 
 h1 {
-	font-size: 2.5em;
+	font-size: 2em;
 }
 
 .coordonnees {
@@ -34,18 +42,12 @@ h1 {
 
 .coordonnees img {}
 
-.github {
-	display: flex;
-	align-items: baseline;
-	gap: 10px;
-}
-
 .titre {
 	display: flex;
 	color: white;
 	font-size: 1.5em;
-	text-align: center;
 	flex-direction: column;
+	align-items: center;
 	justify-content: center;
 }
 
@@ -64,14 +66,9 @@ a {
 	text-decoration: none;
 }
 
-.contenu {
-	width: 90%;
-	margin: auto;
-
-}
-
 ul {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	align-self: center;
 	border-left: 5px solid black;
 	list-style-type: none;
@@ -79,6 +76,7 @@ ul {
 	padding-top: 25px;
 	padding-bottom: 25px;
 	line-height: 70px;
+	gap: 15px;
 }
 
 img {
@@ -92,4 +90,16 @@ img {
 
 em {
 	font-style: italic;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+.github {
+	color: black;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
 }
