@@ -11,7 +11,7 @@
 		
     </head>
 
-    <body onload="horloge()">
+    <body onload="init()">
 
     <div class="blocpage">
     	<header>
@@ -62,26 +62,8 @@
         </footer>
     </div>
 	<script>
-		//photo aleatoire banniere
-		let banniere = document.querySelector(".banniere")
-		let photosBan = [
-			"mada.jpg",
-			"mada2.jpg",
-			"mada3.jpg",
-			"mada4.jpg",
-			"mada5.jpg",
-			"mada6.jpg",
-			"mada7.jpg"
-		]
-
-		function aleatoire(max) {
-			return Math.floor(Math.random() * max)
-		}
-		let random = aleatoire(photosBan.length)
-		let randomPhoto = photosBan[random]
-		banniere.style.backgroundImage = `url(${randomPhoto})`
 		
-
+		//window.onload = change()
 
 
 		// changement du background sur la partie galerie
