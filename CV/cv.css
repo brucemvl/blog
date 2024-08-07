@@ -65,6 +65,7 @@ h1 {
     /* float: inline-end; */
     top: 8%;
     right: 5%;
+	border: 3px solid #f3f3f3;
 }
 
 body {
@@ -104,6 +105,12 @@ img {
 	top: 15px
 }
 
+.experiences li {
+	display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
 em {
 	font-style: italic;
 }
@@ -131,6 +138,12 @@ footer {
 
 	.coordonnees {
 		font-size: 0.8em;
+	}
+
+	.photo img {
+		width: 18%;
+        height: 20%;
+        top: 5%;
 	}
 
 	@media (max-width: 600px){
@@ -165,6 +178,19 @@ footer {
 		}
 
 		h1 {
+			font-size: 0.9em;
+		}
+
+		.experiences li{
+			display: flex;
+			align-items: center;
+		}
+
+		.experiences ul {
+			gap: 30px;
+		}
+
+		.text {
 			font-size: 0.9em;
 		}
 	}

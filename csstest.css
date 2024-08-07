@@ -81,7 +81,7 @@ header li:hover {
 	background-color: white;
 	border-radius: inset 3px black;
 	box-shadow: 0px 5px 15px 0px #f8f7f7;
-	transition: 1s;
+	transition: 0.6s;
 	border: solid 1px white;
 }
 
@@ -109,7 +109,7 @@ header a {
 	text-decoration-line: none;
 	color: black;
 	text-decoration: none;
-	transition-duration: 0.6s;
+	transition-duration: 0.5s;
 }
 
 a:hover {
@@ -170,13 +170,14 @@ button:hover {
 	border: 1px solid red;
 	cursor: pointer;
 	transform: scale(1.15);
+	color: white;
 }
 
 button {
-	background: radial-gradient(rgb(120, 198, 227), blue);
-	color: white;
+	background: radial-gradient(rgb(236 246 150), #c9ac2c);;
+	color: black;
 	font-weight: bold;
-	border: 1px solid blue;
+	border: 1px solid #d2c176;
 	height: 30px;
 	border-radius: 5px;
 	box-shadow: 0px 3px 0px black;
