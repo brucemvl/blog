@@ -270,8 +270,7 @@ aside li:hover {
 footer {
 	color: white;
 	text-align: right;
-	position: relative;
-	left: 37%;
+	align-self: flex-end;
 }
 
 footer a {

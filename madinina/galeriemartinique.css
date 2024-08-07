@@ -85,6 +85,7 @@ a {
 footer {
 	color: white;
 	text-align: right;
+	align-self: flex-end;
 }
 
 footer a {
@@ -116,4 +117,6 @@ footer a:hover {
 		grid-template-columns: repeat(5, 1fr);
 		grid-template-rows: repeat(9, 1fr);
 	}
+
+
 }

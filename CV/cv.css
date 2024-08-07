@@ -43,8 +43,6 @@ h1 {
     flex-direction: column;
 }
 
-.coordonnees img {}
-
 .titre {
 	display: flex;
     color: white;

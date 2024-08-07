@@ -174,10 +174,9 @@ header img {
 }
 
 footer {
-	position: relative;
-	left: 33%;
 	color: white;
 	text-align: right;
+	align-self: flex-end;
 }
 
 footer a {
@@ -223,7 +222,7 @@ footer a:hover {
 	.coeur {
 		width: 40px;
 		height: 40px;
-		top: 185%;
+		top: 155%;
 		right: 85%;
 	}
 
